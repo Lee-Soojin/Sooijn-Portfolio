@@ -16,9 +16,11 @@ const Home = (props) => {
           </span>
 
           <p className={styles.site_banner__subdescription}>
-            배움의 재미와 성장의 뿌듯함을 동력으로 매일매일 자라나는
+            배움의 재미와 디버깅의 뿌듯함을 동력으로 매일매일 자라나는
             개발자입니다
-            <br></br>
+            <br />
+            새로운 공부에 재미를 느끼고 하나에 꽂히면 <br /> 끝까지 파고드는
+            성격이 저의 강점입니다
           </p>
         </div>
         <figure className={styles.site_banner__img_container}>

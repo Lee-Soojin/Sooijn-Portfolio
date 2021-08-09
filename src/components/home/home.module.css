@@ -17,9 +17,46 @@
   height: 100vh;
   width: 100vw;
   background: url(../../imgs/home_bg.jpg) no-repeat;
+  font-size: 16px;
 }
 
 .site_banner_container {
   display: flex;
   margin: 0 auto;
+  padding: 5rem 0;
+  align-items: flex-start;
+}
+
+.site_banner__contents {
+  padding-top: 5rem;
+  display: flex;
+  width: 50%;
+  padding-right: 6rem;
+  font-family: "GongGothicBold";
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.site_banner__contents {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 70%;
+  color: white;
+  text-align: left;
+}
+
+.site_banner__title {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.site_banner__description {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.site_banner__img_container > img {
+  margin: 0;
+  width: 20rem;
 }

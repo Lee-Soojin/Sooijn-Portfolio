@@ -8,9 +8,17 @@ const Home = (props) => {
       <div className={styles.site_banner_container}>
         <div className={styles.site_banner__contents}>
           <h1 className={styles.site_banner__title}>Hi!</h1>
-          <p className={styles.site_banner__description}>
-            프론트엔드 개발자 <br></br>
-            이수진입니다
+          <span>
+            <p className={styles.site_banner__description}>
+              프론트엔드 개발자 <br></br>
+              이수진입니다
+            </p>
+          </span>
+
+          <p className={styles.site_banner__subdescription}>
+            배움의 재미와 성장의 뿌듯함을 동력으로 매일매일 자라나는
+            개발자입니다
+            <br></br>
           </p>
         </div>
         <figure className={styles.site_banner__img_container}>

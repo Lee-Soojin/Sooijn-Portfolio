@@ -24,6 +24,7 @@
   top: 170px;
   height: 100vh;
   width: 100vw;
+  max-width: 100vw;
   background: url(../../imgs/home_bg.jpg) no-repeat;
   font-size: 16px;
   overflow-x: hidden;
@@ -39,7 +40,6 @@
 .site_banner__contents {
   padding-top: 5rem;
   display: inline;
-  /* flex-direction: column; */
   width: 70%;
   padding-right: 6rem;
   font-family: "GongGothicBold";

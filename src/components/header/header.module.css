@@ -10,6 +10,7 @@
   display: flex;
   position: absolute;
   top: 0;
+  left: 0;
   width: 100%;
   height: 171px;
   background-color: var(--background-color);
@@ -19,6 +20,7 @@
 
 .header_navbar {
   display: flex;
+  position: relative;
   width: 100%;
   height: 100%;
 }
@@ -30,34 +32,143 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  padding: 0;
   color: white;
   font-size: 1.8rem;
   width: 50%;
   height: 100%;
 }
 
+.header_navbar_menu > li {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 12px 12px;
+}
+
 .header_navbar_menu > li > a {
   color: white;
   text-decoration: none;
-  letter-spacing: 0.15rem;
-  padding: 15px 12px;
   position: relative;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .header_navbar_menu > li > a::after {
   background: none repeat scroll 0 0 transparent;
-  bottom: 0;
+  bottom: -0.2rem;
   content: "";
   display: block;
   height: 2px;
   left: 50%;
-  position: absolute;
+  position: relative;
   background: #fff;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.1s ease 0s;
   width: 0;
 }
 
 .header_navbar_menu > li > a:hover:after {
   width: 100%;
   left: 0;
+}
+
+.header_toggle_button {
+  display: none;
+}
+
+@media screen and (max-width: 1920px) and (min-width: 671px) {
+  .header_navbar_menu {
+    font-size: 1.8rem;
+  }
+
+  .header_navbar_menu > li {
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .header_navbar_menu {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    30% {
+      transform: rotate(5deg);
+    }
+
+    70% {
+      transform: rotate(-10deg);
+    }
+
+    100% {
+      transform: rotate(0);
+    }
+  }
+
+  .header_toggle_button {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    z-index: 500;
+    cursor: pointer;
+  }
+
+  .header_toggle_button:hover {
+    animation-name: rotate;
+    animation-duration: 1s;
+  }
+
+  .header_navbar {
+    display: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  .header_navbar__active {
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+    overflow: hidden;
+  }
+
+  .header_navbar_menu {
+    flex-direction: column;
+    padding: 5rem 0;
+    width: 100%;
+  }
+
+  .header_navbar_menu > li {
+    border-bottom: 1px solid black;
+    width: 70%;
+    text-align: left;
+    margin-left: 15%;
+  }
+
+  .header_navbar_menu > li > a {
+    color: black;
+  }
+
+  .header_navbar_menu > li > a::after {
+    background-color: blue;
+    height: 0.5rem;
+    left: 0;
+  }
+
+  .header_navbar_menu > li > a:hover:after {
+    width: 70%;
+    left: 0;
+  }
 }

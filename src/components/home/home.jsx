@@ -14,7 +14,7 @@ const Home = (props) => {
               이수진입니다
             </p>
           </span>
-
+          <span></span>
           <p className={styles.site_banner__subdescription}>
             배움의 재미와 디버깅의 뿌듯함을 동력으로 매일매일 자라나는
             개발자입니다

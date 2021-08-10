@@ -1,10 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./header.module.css";
+import { BiMenuAltLeft } from "react-icons/bi";
 
 const Header = (props) => {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = (event) => {
+    event.preventDefault();
+    setIsClicked(!isClicked);
+  };
+
+  // ${styles['site-search__suggestions']} ${styles['site-search__suggestions--active']}
+
   return (
     <header className={styles.header}>
-      <nav className={styles.header_navbar}>
+      <button className={styles.header_toggle_button} onClick={handleClick}>
+        <BiMenuAltLeft alt="menu toggle icon" />
+      </button>
+      <nav
+        className={
+          isClicked ? styles["header_navbar__active"] : styles["header_navbar"]
+        }
+      >
         <ul className={styles.header_navbar_menu}>
           <li>
             <a href="#">HOME</a>

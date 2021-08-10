@@ -25,7 +25,8 @@
   height: 100vh;
   width: 100vw;
   max-width: 100vw;
-  background: url(../../imgs/home_bg.jpg) no-repeat;
+  background: url(../../imgs/home_bg.jpg) no-repeat center;
+  background-size: cover;
   font-size: 16px;
   overflow-x: hidden;
 }
@@ -33,7 +34,7 @@
 .site_banner_container {
   display: flex;
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 3em 3em;
   align-items: flex-start;
 }
 
@@ -41,7 +42,6 @@
   padding-top: 5rem;
   display: inline;
   width: 70%;
-  padding-right: 6rem;
   font-family: "GongGothicBold";
   color: white;
   justify-content: center;
@@ -65,13 +65,13 @@
 }
 
 .site_banner__title {
-  font-size: 4rem;
+  font-size: 4em;
   margin: 0;
 }
 
 .site_banner__description {
   display: inline;
-  font-size: 4rem;
+  font-size: 4em;
   margin: 0;
 }
 
@@ -91,4 +91,55 @@
   display: flex;
   padding: 2rem;
   background-color: white;
+}
+
+@media screen and (max-width: 1180px) {
+  .site_banner__title,
+  .site_banner__description {
+    font-size: 3em;
+  }
+
+  .site_banner__subdescription {
+    font-size: 1.1rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .site_banner__title,
+  .site_banner__description {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .site_banner {
+    top: 110px;
+  }
+  .site_banner_container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .site_banner__contents {
+    width: 100%;
+    height: auto;
+    padding: 2rem 1.5rem 0 1.5rem;
+  }
+
+  .site_banner__img_container {
+    align-items: center;
+    justify-content: center;
+    padding: 1.5em;
+  }
+
+  .site_banner__title,
+  .site_banner__description {
+    align-items: center;
+  }
+
+  .site_banner__img_container > img {
+    width: 17rem;
+  }
 }

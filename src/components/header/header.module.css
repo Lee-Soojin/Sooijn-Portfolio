@@ -112,6 +112,10 @@
     }
   }
 
+  .header {
+    height: 111px;
+  }
+
   .header_toggle_button {
     display: block;
     background: none;

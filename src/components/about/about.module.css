@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --title-font-family: "Y_Spotlight";
+  --reason-font-family: "GongGothicBold";
+  --reason-content-font-family: "ChosunGu";
+  --introduction-font-family: "GmarketSansLight";
+}
+
+@font-face {
+  font-family: "Y_Spotlight";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GongGothicBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ChosunGu";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GmarketSansLight";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.about {
+  display: flex;
+  position: absolute;
+  top: 120%;
+  width: 100%;
+}
+
+.about_container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_title {
+  margin: 2rem auto;
+  font-size: 2.3rem;
+  font-family: var(--title-font-family);
+}
+
+.about_reason {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.about_reason_title {
+  width: 65%;
+  font-family: var(--reason-font-family);
+  font-size: 1.5rem;
+  color: blue;
+  padding: 1.2rem 0;
+  margin: 0;
+  margin-left: 15%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.589);
+}
+
+.about_reason_contents {
+  width: 65%;
+  font-family: var(--reason-content-font-family);
+  margin-left: 15%;
+  padding: 0.5rem 0;
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.about_introduction {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--introduction-font-family);
+}
+
+.about_introduction > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.about_introduction > div > img {
+  width: 10rem;
+}
+
+.about_intro_awards > ul,
+.about_intro_certification > ul {
+  list-style: none;
+}

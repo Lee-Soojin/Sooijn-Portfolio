@@ -23,7 +23,7 @@ const Skills = (props) => {
                 r="15.5"
               />
               <circle
-                className={styles.chart_inner}
+                className={styles.chart_inner_html}
                 strokeLinecap="round"
                 strokeDasharray="90,100"
                 cx="16.5"
@@ -70,7 +70,7 @@ const Skills = (props) => {
                 r="15.5"
               />
               <circle
-                className={styles.chart_inner}
+                className={styles.chart_inner_css}
                 strokeLinecap="round"
                 strokeDasharray="80,100"
                 cx="16.5"
@@ -118,7 +118,7 @@ const Skills = (props) => {
                 r="15.5"
               />
               <circle
-                className={styles.chart_inner}
+                className={styles.chart_inner_javascript}
                 strokeLinecap="round"
                 strokeDasharray="90,100"
                 cx="16.5"
@@ -166,7 +166,7 @@ const Skills = (props) => {
                 r="15.5"
               />
               <circle
-                className={styles.chart_inner}
+                className={styles.chart_inner_react}
                 strokeLinecap="round"
                 strokeDasharray="90,100"
                 cx="16.5"
@@ -214,7 +214,7 @@ const Skills = (props) => {
                 r="15.5"
               />
               <circle
-                className={styles.chart_inner}
+                className={styles.chart_inner_typescript}
                 strokeLinecap="round"
                 strokeDasharray="40,100"
                 cx="16.5"

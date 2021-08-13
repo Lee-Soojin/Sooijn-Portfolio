@@ -33,7 +33,10 @@ const About = (props) => {
         <section className={styles.about_introduction}>
           <div className={styles.about_intro_school}>
             <img src={aboutImg1} alt="school" />
-            <p>연성대학교 정보통신과 졸업</p>
+            <p>
+              연성대학교 <br />
+              정보통신과 졸업
+            </p>
           </div>
           <div className={styles.about_intro_birth}>
             <img src={aboutImg2} alt="birth" />
@@ -47,7 +50,7 @@ const About = (props) => {
               </li>
               <li>
                 2019 전국대학교 스마트 로봇 경진대회 장려상
-                <p>대한전자공학회, 로보웰코리아</p>
+                <p>대한전자공학회 / 로보웰코리아</p>
               </li>
             </ul>
           </div>

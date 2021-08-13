@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --title-font-family: "GongGothicBold";
+}
+
+@font-face {
+  font-family: "GongGothicBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 212%;
+  width: 100%;
+  height: auto;
+  color: black;
+  font-size: 16px;
+}
+
+.skills_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.skills_title {
+  margin: 2rem auto;
+  color: black;
+  font-family: var(--title-font-family);
+  font-size: 2.3rem;
+}
+
+/* circle chart */
+.circle_chart_container {
+  display: grid;
+  grid-template-columns: repeat(5, 12rem);
+  grid-template-rows: repeat(1, 14rem);
+  position: relative;
+  align-items: center;
+  width: 55%;
+  margin: 1rem auto;
+}
+
+/* svg */
+.circle_chart {
+  display: flex;
+}
+
+.chart_typescript,
+.chart_javascript,
+.chart_react,
+.chart_css .chart_html {
+  display: flex;
+  flex-direction: column;
+}
+
+.chart_outer {
+  display: flex;
+  stroke: #efefef;
+  stroke-width: 2;
+  fill: none;
+}
+
+.chart_inner {
+  display: flex;
+  stroke: #73e8ff;
+  stroke-width: 2;
+  fill: none;
+  animation: chart_filling 1.5s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+.chart_text {
+  animation: chart_upload 2s forwards;
+  opacity: 0;
+  transform: translateY(0.3em);
+}
+
+@keyframes chart_filling {
+  to {
+    stroke-dasharray: 0 100;
+  }
+}
+
+@keyframes chart_upload {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

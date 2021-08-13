@@ -136,11 +136,13 @@
   font-size: 0.8rem;
 }
 
-.about_intro_awards > ul > li > p {
-  font-size: 0.5rem;
+@media screen and (min-width: 1201px) and (max-width: 1470px) {
+  .about_introduction {
+    width: 80%;
+  }
 }
 
-@media screen and (max-width: 1920px) and (min-width: 671px) {
+@media screen and (max-width: 1200px) {
   .about {
     top: 110%;
   }
@@ -173,7 +175,7 @@
   }
 
   .about_intro_awards > ul > li > p {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
 
   .about_intro_certification {
@@ -200,16 +202,21 @@
 
   .about_introduction {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 10rem);
+    grid-template-rows: repeat(4, 14rem);
     margin: 0.5rem;
     font-size: 0.9rem;
   }
 
-  .about_intro_awards {
-    padding: 2rem 0;
+  .about_intro_awards > ul {
+    width: 15rem;
+    white-space: pre-line;
   }
 
   .about_introduction > div > img {
     width: 9rem;
+  }
+
+  .about_intro_certification {
+    font-size: 0.8rem;
   }
 }

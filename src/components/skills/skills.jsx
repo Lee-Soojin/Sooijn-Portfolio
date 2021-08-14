@@ -245,6 +245,57 @@ const Skills = (props) => {
               </g>
             </svg>
           </div>
+          {/* firebase */}
+          <div className={styles.chart_firebase}>
+            <svg
+              className={styles.circle_chart}
+              viewBox="0 0 33 33"
+              xmlns="http://www.w3.org/2000/svg"
+              width="150"
+              height="150"
+            >
+              <circle
+                className={styles.chart_outer}
+                cx="16.5"
+                cy="16.5"
+                r="15.5"
+              />
+              <circle
+                className={styles.chart_inner_firebase}
+                strokeLinecap="round"
+                strokeDasharray="40,100"
+                cx="16.5"
+                cy="16.5"
+                r="15.5"
+              />
+              <g className={styles.chart_text}>
+                <text
+                  className={styles.chart_text_percentage}
+                  x="16.5"
+                  y="15.1"
+                  alignmentBaseline="central"
+                  textAnchor="middle"
+                  fontSize="5"
+                >
+                  Firebase
+                </text>
+                <text
+                  className={styles.chart_text_skillname}
+                  x="16.5"
+                  y="20"
+                  alignmentBaseline="central"
+                  textAnchor="middle"
+                  fontSize="4"
+                >
+                  70%
+                </text>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div className={styles.other_skills}>
+          <h4 className={styles.other_skills_title}>Other Skills</h4>
+          <p className={styles.other_skills_text}></p>
         </div>
       </div>
     </div>

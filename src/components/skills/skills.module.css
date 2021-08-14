@@ -9,6 +9,7 @@
   --circle-javascript-color: #fdd835;
   --circle-react-color: #ab47bc;
   --circle-typescript-color: #29b6f6;
+  --circle-firebase-color: #ffd600;
 }
 
 @font-face {
@@ -47,11 +48,12 @@
 /* circle chart */
 .circle_chart_container {
   display: grid;
-  grid-template-columns: repeat(5, 12rem);
+  grid-template-columns: repeat(6, 12rem);
   grid-template-rows: repeat(1, 12rem);
   position: relative;
   align-items: center;
-  width: 55%;
+  justify-content: center;
+  width: 100%;
   margin: 1rem auto;
 }
 
@@ -63,9 +65,12 @@
 .chart_typescript,
 .chart_javascript,
 .chart_react,
-.chart_css .chart_html {
+.chart_css,
+.chart_html,
+.chart_firebase {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .chart_outer {
@@ -79,7 +84,8 @@
 .chart_inner_html,
 .chart_inner_javascript,
 .chart_inner_react,
-.chart_inner_typescript {
+.chart_inner_typescript,
+.chart_inner_firebase {
   display: flex;
   stroke-width: 2;
   fill: none;
@@ -107,6 +113,10 @@
   stroke: var(--circle-typescript-color);
 }
 
+.chart_inner_firebase {
+  stroke: var(--circle-firebase-color);
+}
+
 .chart_text {
   animation: chart_upload 2s forwards;
   opacity: 0;
@@ -126,7 +136,7 @@
   }
 }
 
-@media screen and (max-width: 1300px) and (min-width: 779px) {
+@media screen and (max-width: 1300px) and (min-width: 781px) {
   .skills {
     top: 220%;
   }
@@ -142,7 +152,7 @@
     display: grid;
     grid-template-columns: repeat(3, 12rem);
     grid-template-rows: repeat(2, 15rem);
-    width: 70%;
+    width: 80%;
     margin: 1rem auto;
     align-items: center;
     justify-content: center;
@@ -163,7 +173,7 @@
 
 @media screen and (max-width: 670px) {
   .skills {
-    top: 260%;
+    top: 270%;
   }
 
   .circle_chart {

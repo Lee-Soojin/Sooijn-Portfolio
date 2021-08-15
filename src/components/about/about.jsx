@@ -59,7 +59,7 @@ const About = (props) => {
             <ul>
               <li>정보통신산업기사</li>
               <li>네트워크관리사 2급</li>
-              <li>Mos 파워포인트, 엑셀</li>
+              <li>MOS 파워포인트, 엑셀</li>
               <li>TOEIC 800</li>
             </ul>
           </div>

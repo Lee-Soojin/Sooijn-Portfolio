@@ -293,10 +293,6 @@ const Skills = (props) => {
             </svg>
           </div>
         </div>
-        <div className={styles.other_skills}>
-          <h4 className={styles.other_skills_title}>Other Skills</h4>
-          <p className={styles.other_skills_text}></p>
-        </div>
       </div>
     </div>
   );

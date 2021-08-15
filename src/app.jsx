@@ -5,6 +5,7 @@ import Home from "./components/home/home";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Skills from "./components/skills/skills";
+import Projects from "./components/projects/projects";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Home />
       <About />
       <Skills />
+      <Projects />
     </>
   );
 }

@@ -53,8 +53,10 @@
   position: relative;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 80%;
   margin: 1rem auto;
+  border-radius: 1.5rem;
+  box-shadow: 23px 23px 58px #c7c7c7, -23px -23px 58px #f9f9f9;
 }
 
 /* svg */
@@ -136,6 +138,12 @@
   }
 }
 
+@media screen and (max-width: 1450px) and (min-width: 1300px) {
+  .circle_chart_container {
+    width: 90%;
+  }
+}
+
 @media screen and (max-width: 1300px) and (min-width: 781px) {
   .skills {
     top: 220%;
@@ -166,6 +174,7 @@
 
   .circle_chart_container {
     width: auto;
+    padding: 0 1rem;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 12rem);
   }

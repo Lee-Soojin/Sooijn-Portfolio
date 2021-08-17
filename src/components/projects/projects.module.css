@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --title-font-family: "GongGothicBold";
+  --projects-font-family: "SeoulNamsanM";
+  --skill-react-color: #9be7ff;
+  --skill-firebase-color: #ffd54f;
+  --skill-javascript-color: #ffd600;
+  --skill-html-color: #ff483b;
+  --skill-css-color: #0097ff;
+  --skill-postcss-color: #ff7043;
+  --shadow-color: #babecc;
+}
+
+@font-face {
+  font-family: "GongGothicBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SeoulNamsanM";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulNamsanM.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 255%;
+  width: 100%;
+  height: auto;
+  font-size: 16px;
+}
+
+.projects_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.projects_title {
+  margin: 3rem auto;
+  color: black;
+  font-family: var(--title-font-family);
+  font-size: 2.3rem;
+}
+
+.project {
+  display: flex;
+  width: 80%;
+  height: 30rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  align-items: center;
+  background-color: white;
+  border-radius: 16px;
+}
+
+.project_description {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+
+.project_img {
+  display: flex;
+  flex-direction: column;
+  height: 30rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.project_img > a {
+  display: block;
+  width: 7rem;
+  height: 2rem;
+  margin: 0.5rem auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  border-radius: 1rem;
+  line-height: 2rem;
+  margin-top: 1rem;
+  font-family: var(--projects-font-family);
+  box-shadow: -5px -5px 20px #fff, 5px 5px 20px var(--shadow-color);
+}
+
+.project_img > img {
+  height: 20rem;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 8px rgba(109, 108, 108, 0.719);
+}
+
+.project_name {
+  font-family: var(--projects-font-family);
+  font-size: 1.8rem;
+  margin: 1.5rem 0;
+}
+
+.project_description_text {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--projects-font-family);
+  width: 60%;
+  margin: auto;
+}
+
+.project_description_text > p {
+  margin: 0.5rem 0;
+  margin-left: 1rem;
+  font-weight: 600;
+}
+
+.project_description_text > p:first-child {
+  font-weight: 600;
+}
+
+.project_description_text > p:nth-child(2) {
+  color: blue;
+}
+
+.project_description_text > ul {
+  margin: 0.5rem 0;
+}
+
+.project_description_text > ul > li {
+  margin: 0.5rem 0;
+  color: gray;
+}
+
+.project_skills_title {
+  font-family: var(--projects-font-family);
+  font-weight: 600;
+}
+
+.project_skill_stack {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.project_skill_stack > div {
+  display: flex;
+  flex-direction: row;
+  width: 6rem;
+  height: 1.8rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  text-align: center;
+  line-height: 1.8rem;
+  font-family: var(--projects-font-family);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.project_skill_stack > div > p {
+  margin-left: 0.5rem;
+  color: white;
+}
+
+.project_skill_stack > div:nth-child(1) {
+  background-color: var(--skill-react-color);
+}
+
+.project_skill_stack > div:nth-child(2) {
+  background-color: var(--skill-firebase-color);
+}
+
+.project_skill_stack > div:nth-child(3) {
+  background-color: var(--skill-postcss-color);
+}
+
+.project_skill_stack > div:nth-child(4) {
+  background-color: var(--skill-html-color);
+}
+
+.project_skill_stack > div:nth-child(5) {
+  background-color: var(--skill-css-color);
+}
+
+.project_skill_stack > div:nth-child(6) {
+  background-color: var(--skill-javascript-color);
+}

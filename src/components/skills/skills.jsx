@@ -263,7 +263,7 @@ const Skills = (props) => {
               <circle
                 className={styles.chart_inner_firebase}
                 strokeLinecap="round"
-                strokeDasharray="40,100"
+                strokeDasharray="70,100"
                 cx="16.5"
                 cy="16.5"
                 r="15.5"

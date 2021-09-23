@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="yes"?>
+<svg width="50" height="50">
+<path style="fill:#ffffff; stroke:none;" d="M0 0L0 50L50 50L50 0L0 0z"/>
+<path style="fill:#bce2cd; stroke:none;" d="M7 8L7 42L8 42L7 8z"/>
+<path style="fill:#41d583; stroke:none;" d="M8 8L8 9L19 9L8 8z"/>
+<path style="fill:#e6e6e6; stroke:none;" d="M19 8L30 23L30 8L19 8z"/>
+<path style="fill:#bfe2cf; stroke:none;" d="M30 8L30 25L31 25L30 8z"/>
+<path style="fill:#02cf5c; stroke:none;" d="M31 8L31 25L30 25C24.7061 14.3581 19.9591 9 8 9L8 42L19 42L19 25L20 25C25.1189 35.773 29.966 42 42 42L42 8L31 8z"/>
+<path style="fill:#c6e3d3; stroke:none;" d="M42 8L42 42L43 42L42 8z"/>
+<path style="fill:#c4e3d1; stroke:none;" d="M19 25L19 42L20 42L19 25z"/>
+<path style="fill:#e6e6e6; stroke:none;" d="M20 28L20 42L31 42L22 28L20 28z"/>
+</svg>

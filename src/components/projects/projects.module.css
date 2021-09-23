@@ -5,12 +5,14 @@
 :root {
   --title-font-family: "GongGothicBold";
   --projects-font-family: "SeoulNamsanM";
-  --skill-react-color: #9be7ff;
-  --skill-firebase-color: #ffd54f;
-  --skill-javascript-color: #ffd600;
-  --skill-html-color: #ff483b;
-  --skill-css-color: #0097ff;
-  --skill-postcss-color: #ff7043;
+  --skill-react-color: #61dafb;
+  --skill-firebase-color: #ffca28;
+  --skill-javascript-color: #f7df1e;
+  --skill-html-color: #e34f26;
+  --skill-css-color: #1572b6;
+  --skill-postcss-color: #dd3a0a;
+  --skill-naver-color: #19ce60;
+  --skill-ckeditor-color: #4caf50;
   --shadow-color: #babecc;
 }
 
@@ -99,6 +101,11 @@
   margin-top: 1rem;
   font-family: var(--projects-font-family);
   box-shadow: -5px -5px 20px #fff, 5px 5px 20px var(--shadow-color);
+  transition: all 0.1s ease;
+}
+
+.project_img > a:hover {
+  transform: scale(1.1);
 }
 
 .project_img > img {
@@ -198,4 +205,19 @@
 
 .project_skill_stack > div:nth-child(6) {
   background-color: var(--skill-javascript-color);
+  font-size: 0.8rem;
+}
+
+.project_skill_stack > div:nth-child(7) {
+  background-color: var(--skill-naver-color);
+}
+
+.project_skill_stack > div:nth-child(8) {
+  background-color: var(--skill-ckeditor-color);
+  font-size: 0.8rem;
+}
+
+.skill_naver_icon,
+.skill_ckeditor_icon {
+  width: 14px;
 }

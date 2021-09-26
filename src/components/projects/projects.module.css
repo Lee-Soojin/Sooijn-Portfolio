@@ -86,7 +86,7 @@
   justify-content: center;
 }
 
-.project_img > a {
+.project_link {
   display: block;
   width: 7rem;
   height: 2rem;
@@ -104,8 +104,27 @@
   transition: all 0.1s ease;
 }
 
-.project_img > a:hover {
+.project_github:hover,
+.project_link:hover {
   transform: scale(1.1);
+}
+
+.project_github {
+  display: block;
+  width: 7rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-family: var(--projects-font-family);
+  font-size: 1.1rem;
+  border-radius: 1rem;
+  line-height: 2rem;
+  margin-top: 0.5rem;
+  box-shadow: -5px -5px 20px #fff, 5px 5px 20px var(--shadow-color);
+  transition: all 0.1s ease;
 }
 
 .project_img > img {

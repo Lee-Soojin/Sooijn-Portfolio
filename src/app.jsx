@@ -6,6 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Skills from "./components/skills/skills";
 import Projects from "./components/projects/projects";
+import Contact from "./components/contact/contact";
 
 function App() {
   return (
@@ -15,6 +16,10 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <Contact />
+      <footer className="footer">
+        Copyright 2021. Lee Soojin All Rights Reserved{" "}
+      </footer>
     </>
   );
 }

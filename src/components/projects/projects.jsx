@@ -8,6 +8,7 @@ import { SiPostcss } from "react-icons/si";
 import { SiHtml5 } from "react-icons/si";
 import { SiCss3 } from "react-icons/si";
 import { SiJavascript } from "react-icons/si";
+import { SiGithub } from "react-icons/si";
 
 const Projects = (props) => {
   return (
@@ -21,8 +22,19 @@ const Projects = (props) => {
               alt="project tft card maker"
               className={styles.project_img_1}
             />
-            <a href="https://61403114f841584ba1bc3859--tft-deck-maker.netlify.app/">
+            <a
+              className={styles.project_link}
+              href="https://61403114f841584ba1bc3859--tft-deck-maker.netlify.app/"
+              target="_blank"
+            >
               바로가기
+            </a>
+            <a
+              className={styles.project_github}
+              href="https://github.com/Lee-Soojin/TFT_deck_maker"
+              target="_blank"
+            >
+              <SiGithub /> GitHub
             </a>
           </div>
 
@@ -77,8 +89,19 @@ const Projects = (props) => {
               alt="project food diary"
               className={styles.project_img_2}
             />
-            <a href="https://614c1d321fffb755093e35c2--food-diary.netlify.app/">
+            <a
+              className={styles.project_link}
+              href="https://614c1d321fffb755093e35c2--food-diary.netlify.app/"
+              target="_blank"
+            >
               바로가기
+            </a>
+            <a
+              className={styles.project_github}
+              href="https://github.com/Lee-Soojin/Food_diary"
+              target="_blank"
+            >
+              <SiGithub /> GitHub
             </a>
           </div>
 

@@ -240,3 +240,28 @@
 .skill_ckeditor_icon {
   width: 14px;
 }
+
+@media screen and (max-width: 1450px) and (min-width: 1300px) {
+}
+
+@media screen and (max-width: 1300px) {
+  .projects {
+    top: 300%;
+    flex-wrap: wrap;
+  }
+
+  .project {
+    flex-direction: column;
+    position: relative;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .projects {
+    top: 350%;
+  }
+}
+
+@media screen and (max-width: 670px) {
+}

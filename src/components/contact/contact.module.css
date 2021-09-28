@@ -92,3 +92,21 @@
   font-family: var(--contact-font-family);
   font-size: 1.1rem;
 }
+
+@media screen and (max-width: 1300px) and (min-width: 781px) {
+  .contact {
+    top: 530%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .contact {
+    top: 580%;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .contact {
+    top: 590%;
+  }
+}

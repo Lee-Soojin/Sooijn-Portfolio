@@ -10,7 +10,7 @@ import Contact from "./components/contact/contact";
 
 function App() {
   return (
-    <>
+    <div className="portfolio">
       <Header />
       <Home />
       <About />
@@ -18,9 +18,9 @@ function App() {
       <Projects />
       <Contact />
       <footer className="footer">
-        Copyright 2021. Lee Soojin All Rights Reserved{" "}
+        Copyright 2021. Lee Soojin All Rights Reserved
       </footer>
-    </>
+    </div>
   );
 }
 

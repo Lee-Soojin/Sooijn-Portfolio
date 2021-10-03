@@ -1,9 +1,25 @@
-import React, { useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import styles from "./header.module.css";
 import { BiMenuAltLeft } from "react-icons/bi";
 
 const Header = (props) => {
   const [isClicked, setIsClicked] = useState(false);
+  const [scroll, setScroll] = useState(0);
+  const [height, setHeight] = useState(0);
+  const headerRef = useRef(null);
+
+  const handleScroll = () => {
+    setScroll(window.scrollY || document.documentElement.scrollTop);
+
+    console.log("scroll:", scroll);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    setHeight(headerRef.current.clientHeight);
+    console.log("height:", height);
+    console.log("header:", headerRef);
+  });
 
   const handleClick = (event) => {
     event.preventDefault();
@@ -36,7 +52,12 @@ const Header = (props) => {
   };
 
   return (
-    <header className={styles.header}>
+    <header
+      className={
+        scroll < height ? styles["header"] : styles["header_transparent"]
+      }
+      ref={headerRef}
+    >
       <button className={styles.header_toggle_button} onClick={handleClick}>
         <BiMenuAltLeft alt="menu toggle icon" />
       </button>

@@ -10,6 +10,31 @@ const Header = (props) => {
     setIsClicked(!isClicked);
   };
 
+  const handleScrollToHome = (event) => {
+    event.preventDefault();
+    window.scrollTo(0, 0);
+  };
+
+  const handleScrollToAbout = (event) => {
+    event.preventDefault();
+    window.scrollTo(0, 1100);
+  };
+
+  const handleScrollToSkills = (event) => {
+    event.preventDefault();
+    window.scrollTo(0, 2000);
+  };
+
+  const handleScrollToProjects = (event) => {
+    event.preventDefault();
+    window.scrollTo(0, 2760);
+  };
+
+  const handleScrollToContact = (event) => {
+    event.preventDefault();
+    window.scrollTo(0, 3500);
+  };
+
   return (
     <header className={styles.header}>
       <button className={styles.header_toggle_button} onClick={handleClick}>
@@ -22,19 +47,29 @@ const Header = (props) => {
       >
         <ul className={styles.header_navbar_menu}>
           <li>
-            <a href="#">HOME</a>
+            <a href="#" onClick={handleScrollToHome}>
+              HOME
+            </a>
           </li>
           <li>
-            <a href="#">ABOUT</a>
+            <a href="#" onClick={handleScrollToAbout}>
+              ABOUT
+            </a>
           </li>
           <li>
-            <a href="#">SKILLS</a>
+            <a href="#" onClick={handleScrollToSkills}>
+              SKILLS
+            </a>
           </li>
           <li>
-            <a href="#">PROJECTS</a>
+            <a href="#" onClick={handleScrollToProjects}>
+              PROJECTS
+            </a>
           </li>
           <li>
-            <a href="#">CONTACT</a>
+            <a href="#" onClick={handleScrollToContact}>
+              CONTACT
+            </a>
           </li>
         </ul>
       </nav>

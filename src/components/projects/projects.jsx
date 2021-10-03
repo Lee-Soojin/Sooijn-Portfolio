@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./projects.module.css";
 import ProjectImg1 from "../../imgs/projects_tft_img.PNG";
 import ProjectImg2 from "../../imgs/projects_food_diary_img.png";
@@ -11,8 +11,22 @@ import { SiJavascript } from "react-icons/si";
 import { SiGithub } from "react-icons/si";
 
 const Projects = (props) => {
+  const [scroll, setScroll] = useState(0);
+
+  const handleScroll = () => {
+    setScroll(window.scrollY || document.documentElement.scrollTop);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  });
+
   return (
-    <div className={styles.projects}>
+    <div
+      className={
+        scroll > 2000 ? styles["projects"] : styles["projects_invisible"]
+      }
+    >
       <div className={styles.projects_container}>
         <h1 className={styles.projects_title}>PROJECTS</h1>
         <div className={styles.project}>

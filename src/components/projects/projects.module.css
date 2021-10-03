@@ -40,6 +40,11 @@
   width: 100%;
   height: auto;
   font-size: 16px;
+  animation: fadeIn 2s;
+}
+
+.projects_invisible {
+  opacity: 0;
 }
 
 .projects_container {
@@ -239,6 +244,18 @@
 .skill_naver_icon,
 .skill_ckeditor_icon {
   width: 14px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 
 @media screen and (max-width: 1450px) and (min-width: 1300px) {

@@ -29,17 +29,17 @@ const Header = (props) => {
 
   const handleScrollToAbout = (event) => {
     event.preventDefault();
-    window.scrollTo(0, 1100);
+    window.scrollTo(0, 1000);
   };
 
   const handleScrollToSkills = (event) => {
     event.preventDefault();
-    window.scrollTo(0, 2000);
+    window.scrollTo(0, 1850);
   };
 
   const handleScrollToProjects = (event) => {
     event.preventDefault();
-    window.scrollTo(0, 2760);
+    window.scrollTo(0, 2600);
   };
 
   const handleScrollToContact = (event) => {

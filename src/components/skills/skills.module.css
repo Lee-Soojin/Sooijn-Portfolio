@@ -38,6 +38,11 @@
   height: auto;
   color: black;
   font-size: 16px;
+  animation: fadeIn 2s;
+}
+
+.skills_invisible {
+  opacity: 0;
 }
 
 .skills_container {
@@ -146,6 +151,18 @@
   animation: chart_upload 2s forwards;
   opacity: 0;
   transform: translateY(0.3em);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 
 @keyframes chart_filling {

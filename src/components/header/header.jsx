@@ -10,15 +10,11 @@ const Header = (props) => {
 
   const handleScroll = () => {
     setScroll(window.scrollY || document.documentElement.scrollTop);
-
-    console.log("scroll:", scroll);
   };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     setHeight(headerRef.current.clientHeight);
-    console.log("height:", height);
-    console.log("header:", headerRef);
   });
 
   const handleClick = (event) => {

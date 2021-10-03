@@ -2,11 +2,12 @@ import "./app.css";
 import About from "./components/about/about";
 import Header from "./components/header/header";
 import Home from "./components/home/home";
-import AOS from "aos";
+// import AOS from "aos";
 import "aos/dist/aos.css";
 import Skills from "./components/skills/skills";
 import Projects from "./components/projects/projects";
 import Contact from "./components/contact/contact";
+import { useEffect, useState } from "react";
 
 function App() {
   return (

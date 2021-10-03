@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./skills.module.css";
 
 const Skills = (props) => {
+  const [scroll, setScroll] = useState(0);
+
+  const handleScroll = () => {
+    setScroll(window.scrollY || document.documentElement.scrollTop);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  });
   return (
-    <div className={styles.skills}>
+    <div
+      className={scroll > 1100 ? styles["skills"] : styles["skills_invisible"]}
+    >
       <div className={styles.skills_container}>
         <h1 className={styles.skills_title}>SKILLS</h1>
         <div className={styles.circle_chart_container}>

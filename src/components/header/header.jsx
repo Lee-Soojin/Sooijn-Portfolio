@@ -10,8 +10,6 @@ const Header = (props) => {
     setIsClicked(!isClicked);
   };
 
-  // ${styles['site-search__suggestions']} ${styles['site-search__suggestions--active']}
-
   return (
     <header className={styles.header}>
       <button className={styles.header_toggle_button} onClick={handleClick}>

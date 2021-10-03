@@ -4,6 +4,7 @@
 
 :root {
   --title-font-family: "GongGothicBold";
+  --chart-font-family: "Pretendard-Regular";
   --circle-css-color: #0077c2;
   --circle-html-color: #f50057;
   --circle-javascript-color: #fdd835;
@@ -17,6 +18,14 @@
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicBold.woff")
     format("woff");
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -48,12 +57,13 @@
 /* circle chart */
 .circle_chart_container {
   display: grid;
-  grid-template-columns: repeat(6, 12rem);
-  grid-template-rows: repeat(1, 12rem);
+  grid-template-columns: repeat(3, 15rem);
+  grid-template-rows: repeat(2, 15rem);
   position: relative;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  width: 50%;
+  padding: 2rem 0;
   margin: 1rem auto;
   border-radius: 1.5rem;
   box-shadow: 23px 23px 58px #c7c7c7, -23px -23px 58px #f9f9f9;
@@ -73,6 +83,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: var(--chart-font-family);
+}
+
+.chart_typescript_text,
+.chart_javascript_text,
+.chart_react_text,
+.chart_css_text,
+.chart_html_text,
+.chart_firebase_text {
+  font-size: 0.9rem;
+  font-family: var(--chart-font-family);
+  font-weight: 300;
+  width: 65%;
 }
 
 .chart_outer {

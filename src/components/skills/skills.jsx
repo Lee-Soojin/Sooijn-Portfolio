@@ -53,6 +53,7 @@ const Skills = (props) => {
                 </text>
               </g>
             </svg>
+            <p className={styles.chart_html_text}>마크업, form, svg 등 사용</p>
           </div>
           {/* css3 */}
           <div className={styles.chart_css}>
@@ -100,6 +101,9 @@ const Skills = (props) => {
                 </text>
               </g>
             </svg>
+            <p className={styles.chart_css_text}>
+              텍스트, 배경화면, 애니메이션 등 사용
+            </p>
           </div>
 
           {/* javascript */}
@@ -148,6 +152,9 @@ const Skills = (props) => {
                 </text>
               </g>
             </svg>
+            <p className={styles.chart_javascript_text}>
+              class, function, Event 등 사용
+            </p>
           </div>
 
           {/* REACT */}
@@ -196,6 +203,9 @@ const Skills = (props) => {
                 </text>
               </g>
             </svg>
+            <p className={styles.chart_react_text}>
+              class/function 컴포넌트 구현, state, props 등 사용
+            </p>
           </div>
 
           {/* typescript */}
@@ -244,6 +254,9 @@ const Skills = (props) => {
                 </text>
               </g>
             </svg>
+            <p className={styles.chart_typescript_text}>
+              Interface, Alias, Union 타입 등 사용
+            </p>
           </div>
           {/* firebase */}
           <div className={styles.chart_firebase}>
@@ -291,6 +304,9 @@ const Skills = (props) => {
                 </text>
               </g>
             </svg>
+            <p className={styles.chart_firebase_text}>
+              Authentication, Realtime Database 사용
+            </p>
           </div>
         </div>
       </div>

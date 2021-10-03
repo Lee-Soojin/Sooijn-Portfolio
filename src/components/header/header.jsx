@@ -25,26 +25,31 @@ const Header = (props) => {
   const handleScrollToHome = (event) => {
     event.preventDefault();
     window.scrollTo(0, 0);
+    setIsClicked(false);
   };
 
   const handleScrollToAbout = (event) => {
     event.preventDefault();
-    window.scrollTo(0, 1000);
+    window.scrollTo(0, 900);
+    setIsClicked(false);
   };
 
   const handleScrollToSkills = (event) => {
     event.preventDefault();
     window.scrollTo(0, 1850);
+    setIsClicked(false);
   };
 
   const handleScrollToProjects = (event) => {
     event.preventDefault();
     window.scrollTo(0, 2600);
+    setIsClicked(false);
   };
 
   const handleScrollToContact = (event) => {
     event.preventDefault();
     window.scrollTo(0, 3500);
+    setIsClicked(false);
   };
 
   return (

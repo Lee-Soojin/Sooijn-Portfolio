@@ -44,6 +44,13 @@
 }
 
 .projects_invisible {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 290%;
+  width: 100%;
+  height: auto;
+  font-size: 16px;
   opacity: 0;
 }
 

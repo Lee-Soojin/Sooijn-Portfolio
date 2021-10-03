@@ -42,6 +42,14 @@
 }
 
 .skills_invisible {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 212%;
+  width: 100%;
+  height: auto;
+  color: black;
+  font-size: 16px;
   opacity: 0;
 }
 

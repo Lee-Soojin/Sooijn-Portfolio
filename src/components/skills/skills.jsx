@@ -34,7 +34,11 @@ const Skills = (props) => {
                 r="15.5"
               />
               <circle
-                className={styles.chart_inner_html}
+                className={
+                  scroll > 1100
+                    ? styles["chart_inner_html"]
+                    : styles["chart_inner_html_invisble"]
+                }
                 strokeLinecap="round"
                 strokeDasharray="90,100"
                 cx="16.5"
@@ -82,7 +86,11 @@ const Skills = (props) => {
                 r="15.5"
               />
               <circle
-                className={styles.chart_inner_css}
+                className={
+                  scroll > 1100
+                    ? styles["chart_inner_css"]
+                    : styles["chart_inner_css_invisible"]
+                }
                 strokeLinecap="round"
                 strokeDasharray="80,100"
                 cx="16.5"
@@ -133,7 +141,11 @@ const Skills = (props) => {
                 r="15.5"
               />
               <circle
-                className={styles.chart_inner_javascript}
+                className={
+                  scroll > 1100
+                    ? styles["chart_inner_javascript"]
+                    : styles["chart_inner_javascript_invisible"]
+                }
                 strokeLinecap="round"
                 strokeDasharray="90,100"
                 cx="16.5"
@@ -184,7 +196,11 @@ const Skills = (props) => {
                 r="15.5"
               />
               <circle
-                className={styles.chart_inner_react}
+                className={
+                  scroll > 1100
+                    ? styles["chart_inner_react"]
+                    : styles["chart_inner_react_invisible"]
+                }
                 strokeLinecap="round"
                 strokeDasharray="90,100"
                 cx="16.5"
@@ -215,7 +231,7 @@ const Skills = (props) => {
               </g>
             </svg>
             <p className={styles.chart_react_text}>
-              class/function 컴포넌트 구현, state, props 등 사용
+              React Hooks, useEffect, 컴포넌트 구현, state 등 사용
             </p>
           </div>
 
@@ -235,7 +251,11 @@ const Skills = (props) => {
                 r="15.5"
               />
               <circle
-                className={styles.chart_inner_typescript}
+                className={
+                  scroll > 1100
+                    ? styles["chart_inner_typescript"]
+                    : styles["chart_inner_typescript_invisible"]
+                }
                 strokeLinecap="round"
                 strokeDasharray="40,100"
                 cx="16.5"
@@ -285,7 +305,11 @@ const Skills = (props) => {
                 r="15.5"
               />
               <circle
-                className={styles.chart_inner_firebase}
+                className={
+                  scroll > 1100
+                    ? styles["chart_inner_firebase"]
+                    : styles["chart_inner_firebase_invisible"]
+                }
                 strokeLinecap="round"
                 strokeDasharray="70,100"
                 cx="16.5"

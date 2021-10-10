@@ -32,18 +32,18 @@ const About = (props) => {
         </section>
         <section className={styles.about_introduction}>
           <div className={styles.about_intro_school}>
-            <img src={aboutImg1} alt="school" />
+            <img src={aboutImg1} alt="school" width="160" height="107" />
             <p>
               연성대학교 <br />
               정보통신과 졸업
             </p>
           </div>
           <div className={styles.about_intro_birth}>
-            <img src={aboutImg2} alt="birth" />
+            <img src={aboutImg2} alt="birth" width="160" height="107" />
             <p>1999.07.24</p>
           </div>
           <div className={styles.about_intro_awards}>
-            <img src={aboutImg3} alt="awards" />
+            <img src={aboutImg3} alt="awards" width="160" height="107" />
             <ul>
               <li>
                 2018 AIR SPORTS 경진대회 보고서상 <p>산업통상자원부</p>
@@ -55,7 +55,7 @@ const About = (props) => {
             </ul>
           </div>
           <div className={styles.about_intro_certification}>
-            <img src={aboutImg4} alt="certification" />
+            <img src={aboutImg4} alt="certification" width="160" height="107" />
             <ul>
               <li>정보통신산업기사</li>
               <li>네트워크관리사 2급</li>

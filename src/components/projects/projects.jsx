@@ -35,6 +35,8 @@ const Projects = (props) => {
               src={ProjectImg1}
               alt="project tft card maker"
               className={styles.project_img_1}
+              width="573"
+              height="320"
             />
             <a
               className={styles.project_link}
@@ -102,6 +104,8 @@ const Projects = (props) => {
               src={ProjectImg2}
               alt="project food diary"
               className={styles.project_img_2}
+              width="573"
+              height="320"
             />
             <a
               className={styles.project_link}

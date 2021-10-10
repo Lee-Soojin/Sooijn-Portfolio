@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import styles from "./header.module.css";
-import { BiMenuAltLeft } from "react-icons/bi";
+import { BiMenuAltLeft } from "@react-icons/all-files/bi/BiMenuAltLeft";
 
 const Header = (props) => {
   const [isClicked, setIsClicked] = useState(false);
@@ -54,9 +54,7 @@ const Header = (props) => {
 
   return (
     <header
-      className={
-        scroll < height ? styles["header"] : styles["header_transparent"]
-      }
+      className={scroll < height ? styles["header"] : styles["header_white"]}
       ref={headerRef}
     >
       <button className={styles.header_toggle_button} onClick={handleClick}>

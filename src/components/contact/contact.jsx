@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./contact.module.css";
-import { IoPhonePortraitOutline } from "react-icons/io5";
-import { HiOutlineMail } from "react-icons/hi";
+import { IoPhonePortraitOutline } from "@react-icons/all-files/io5/IoPhonePortraitOutline";
+import { HiOutlineMail } from "@react-icons/all-files/hi/HiOutlineMail";
 
 const Contact = (props) => {
   const [scroll, setScroll] = useState(0);

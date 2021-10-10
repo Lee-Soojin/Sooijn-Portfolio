@@ -1,25 +1,27 @@
 import "./app.css";
 import React, { useState } from "react";
-
 import About from "./components/about/about";
 import Header from "./components/header/header";
 import Home from "./components/home/home";
-// import AOS from "aos";
-import "aos/dist/aos.css";
+// import "aos/dist/aos.css";
 import Skills from "./components/skills/skills";
 import Projects from "./components/projects/projects";
 import Contact from "./components/contact/contact";
-import { FaArrowCircleUp } from "react-icons/fa";
+import { FaArrowCircleUp } from "@react-icons/all-files/fa/FaArrowCircleUp";
+import { useEffect } from "react/cjs/react.development";
 
 function App() {
   const [visible, setVisible] = useState(false);
 
-  const handleClick = (event) => {
-    event.preventDefault();
+  useEffect(() => {
     const scrollY = window.scrollY;
     if (scrollY > 0) {
       setVisible(true);
     }
+  });
+
+  const handleClick = (event) => {
+    event.preventDefault();
     window.scrollTo(0, 0);
   };
 

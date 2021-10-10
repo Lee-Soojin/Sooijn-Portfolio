@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import styles from "./projects.module.css";
-import ProjectImg1 from "../../imgs/projects_tft_img.PNG";
+import ProjectImg1 from "../../imgs/projects_tft_img.png";
 import ProjectImg2 from "../../imgs/projects_food_diary_img.png";
-import { SiFirebase } from "react-icons/si";
-import { SiReact } from "react-icons/si";
-import { SiPostcss } from "react-icons/si";
-import { SiHtml5 } from "react-icons/si";
-import { SiCss3 } from "react-icons/si";
-import { SiJavascript } from "react-icons/si";
-import { SiGithub } from "react-icons/si";
+import { SiFirebase } from "@react-icons/all-files/si/SiFirebase";
+import { SiReact } from "@react-icons/all-files/si/SiReact";
+import { SiPostcss } from "@react-icons/all-files/si/SiPostcss";
+import { SiHtml5 } from "@react-icons/all-files/si/SiHtml5";
+import { SiCss3 } from "@react-icons/all-files/si/SiCss3";
+import { SiJavascript } from "@react-icons/all-files/si/SiJavascript";
+import { SiGithub } from "@react-icons/all-files/si/SiGithub";
 
 const Projects = (props) => {
   const [scroll, setScroll] = useState(0);
@@ -105,7 +105,7 @@ const Projects = (props) => {
             />
             <a
               className={styles.project_link}
-              href="https://614c1d321fffb755093e35c2--food-diary.netlify.app/"
+              href="https://615e68a6eaf6fc6e5799f247--food-diary.netlify.app/"
               target="_blank"
             >
               바로가기

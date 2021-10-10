@@ -176,7 +176,7 @@ const Skills = (props) => {
               </g>
             </svg>
             <p className={styles.chart_javascript_text}>
-              class, function, Event 등 사용
+              ES6 문법, Promise, Event 등 사용
             </p>
           </div>
 

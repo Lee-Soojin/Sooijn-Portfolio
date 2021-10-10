@@ -85,12 +85,17 @@
 .site_banner__img_container > img {
   margin: 0;
   width: 20rem;
+  transition: all 0.4s ease;
 }
 
 .site_banner__img_container {
   display: flex;
   padding: 2rem;
   background-color: white;
+}
+
+.site_banner__img_container > img:hover {
+  transform: scale(1.05);
 }
 
 @media screen and (max-width: 1180px) {

@@ -52,7 +52,6 @@
   width: 100%;
   height: auto;
   margin: 0 auto;
-  /* box-shadow: -6px -6px 10px rgb(146, 144, 144); */
 }
 
 .contact_title {
@@ -60,6 +59,7 @@
   font-size: 2.3rem;
   font-family: var(--title-font-family);
   color: black;
+  cursor: default;
 }
 
 .contact_container > ul {

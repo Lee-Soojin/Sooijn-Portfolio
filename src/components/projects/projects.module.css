@@ -35,8 +35,7 @@
 .projects {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 290%;
+  position: relative;
   width: 100%;
   height: auto;
   font-size: 16px;
@@ -280,8 +279,8 @@
 
 @media screen and (max-width: 1300px) {
   .projects {
-    top: 300%;
     flex-wrap: wrap;
+    align-items: center;
   }
 
   .project {
@@ -292,9 +291,6 @@
 }
 
 @media screen and (max-width: 780px) {
-  .projects {
-    top: 350%;
-  }
 }
 
 @media screen and (max-width: 670px) {

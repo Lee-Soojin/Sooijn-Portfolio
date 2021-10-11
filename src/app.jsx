@@ -7,14 +7,16 @@ import Home from "./components/home/home";
 import Skills from "./components/skills/skills";
 import Projects from "./components/projects/projects";
 import Contact from "./components/contact/contact";
-import { FaArrowCircleUp } from "@react-icons/all-files/fa/FaArrowCircleUp";
+import { RiArrowUpCircleFill } from "@react-icons/all-files/ri/RiArrowUpCircleFill";
+import { DiGithubFull } from "@react-icons/all-files/di/DiGithubFull";
 import { useEffect } from "react/cjs/react.development";
 
 function App() {
   const [visible, setVisible] = useState(false);
+  const [footer, setFooter] = useState(false);
 
   useEffect(() => {
-    const scrollY = window.scrollY;
+    const scrollY = window.scrollY || document.documentElement.scrollTop;
     if (scrollY > 0) {
       setVisible(true);
     }
@@ -37,10 +39,18 @@ function App() {
         className={visible ? "button_scrollUp" : "button_scrollUp_invisible"}
         onClick={handleClick}
       >
-        <FaArrowCircleUp />
+        <RiArrowUpCircleFill />
       </button>
       <footer className="footer">
-        Copyright 2021. Lee Soojin All Rights Reserved
+        <div className="footer__link">
+          <a href="https://github.com/Lee-Soojin" target="_blank">
+            <DiGithubFull />
+          </a>
+        </div>
+        <div className="footer__copyright">
+          Copyright 2021. Lee Soojin All Rights Reserved
+        </div>
+        <div className="footer__email">soojl1005@naver.com</div>
       </footer>
     </div>
   );

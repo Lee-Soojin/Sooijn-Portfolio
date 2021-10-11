@@ -43,8 +43,7 @@
 
 .about {
   display: flex;
-  position: absolute;
-  top: 120%;
+  position: relative;
   width: 100%;
 }
 
@@ -147,10 +146,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .about {
-    top: 110%;
-  }
-
   .about_container {
     width: 90%;
   }
@@ -188,10 +183,6 @@
 }
 
 @media screen and (max-width: 670px) {
-  .about {
-    top: 105%;
-  }
-
   .about_container {
     width: 100%;
   }

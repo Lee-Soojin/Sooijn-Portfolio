@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./contact.module.css";
 import { IoPhonePortraitOutline } from "@react-icons/all-files/io5/IoPhonePortraitOutline";
 import { HiOutlineMail } from "@react-icons/all-files/hi/HiOutlineMail";
 
 const Contact = (props) => {
   const [scroll, setScroll] = useState(0);
+  const skillsRef = useRef();
 
   const handleScroll = () => {
     setScroll(window.scrollY || document.documentElement.scrollTop);
@@ -19,6 +20,7 @@ const Contact = (props) => {
       className={
         scroll > 3200 ? styles["contact"] : styles["contact_invisible"]
       }
+      ref={skillsRef}
     >
       <div className={styles.contact_container}>
         <h1 className={styles.contact_title}>CONTACT</h1>

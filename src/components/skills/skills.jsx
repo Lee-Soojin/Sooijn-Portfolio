@@ -9,7 +9,11 @@ const Skills = (props) => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    const scroll = () => {
+      window.addEventListener("scroll", handleScroll);
+    };
+    scroll();
+    return () => window.removeEventListener("scroll", handleScroll);
   });
   return (
     <div

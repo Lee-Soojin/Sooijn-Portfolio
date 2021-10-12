@@ -15,6 +15,7 @@
   min-height: 100%;
   height: auto;
   position: relative;
+  align-items: center;
 }
 
 .button_scrollUp {
@@ -66,6 +67,23 @@
   color: var(--footer-color);
 }
 
+.footer_invisible {
+  display: flex;
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 1rem;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  align-content: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  background-color: var(--footer--background-color);
+  color: var(--footer-color);
+  display: none;
+}
+
 .footer__link {
   font-size: 3rem;
   align-items: center;
@@ -82,4 +100,18 @@
 .footer__email {
   font-size: 1rem;
   line-height: 3rem;
+}
+
+@media screen and (max-width: 780px) {
+  .button_scrollUp {
+    right: 3rem;
+    bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .button_scrollUp {
+    right: 1rem;
+    bottom: 1rem;
+  }
 }

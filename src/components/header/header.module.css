@@ -39,7 +39,7 @@
   height: 120px;
   background-color: white;
   font-family: var(--header-navbar-menu-font);
-  font-size: 16px;
+  font-size: 12px;
   color: blue;
   z-index: 100;
   box-shadow: 0 4px 4px -2px rgb(226, 223, 223);
@@ -145,12 +145,6 @@
   }
 }
 
-@media screen and (max-width: 670px) {
-  .header_navbar_menu {
-    font-size: 1.5rem;
-  }
-}
-
 @media screen and (max-width: 900px) {
   @keyframes rotate {
     0% {
@@ -235,5 +229,37 @@
   .header_navbar_menu > li > a:hover:after {
     width: 70%;
     left: 0;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .header_navbar_menu {
+    justify-content: space-between;
+  }
+
+  .header_navbar__active {
+    height: 90vh;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .header_navbar_menu {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .header {
+    height: 80px;
+  }
+
+  .header_toggle_button {
+    left: 0.3rem;
+    top: 0.5rem;
+    font-size: 3rem;
+  }
+
+  .header_navbar__active {
+    height: 92vh;
   }
 }

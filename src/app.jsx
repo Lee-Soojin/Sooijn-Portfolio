@@ -14,12 +14,18 @@ import { useEffect } from "react/cjs/react.development";
 function App() {
   const [visible, setVisible] = useState(false);
   const [footer, setFooter] = useState(false);
+  const [scroll, setScroll] = useState(0);
+
+  const handleScroll = () => {
+    setScroll(window.scrollY || document.documentElement.scrollTop);
+  };
 
   useEffect(() => {
     const scrollY = window.scrollY || document.documentElement.scrollTop;
     if (scrollY > 0) {
       setVisible(true);
     }
+    window.addEventListener("scroll", handleScroll);
   });
 
   const handleClick = (event) => {
@@ -41,7 +47,7 @@ function App() {
       >
         <RiArrowUpCircleFill />
       </button>
-      <footer className="footer">
+      <footer className={scroll > 3800 ? "footer" : "footer_invisible"}>
         <div className="footer__link">
           <a href="https://github.com/Lee-Soojin" target="_blank">
             <DiGithubFull />

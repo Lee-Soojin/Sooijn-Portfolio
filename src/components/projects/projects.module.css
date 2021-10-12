@@ -294,4 +294,8 @@
 }
 
 @media screen and (max-width: 670px) {
+  .project_img > img {
+    width: 100%;
+    height: auto;
+  }
 }

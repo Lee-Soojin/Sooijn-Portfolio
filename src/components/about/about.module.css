@@ -182,6 +182,12 @@
   }
 }
 
+@media screen and (max-width: 780px) {
+  .about_container {
+    margin: 0;
+  }
+}
+
 @media screen and (max-width: 670px) {
   .about_container {
     width: 100%;

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./skills.module.css";
 
 const Skills = (props) => {
@@ -9,12 +9,9 @@ const Skills = (props) => {
   };
 
   useEffect(() => {
-    const scroll = () => {
-      window.addEventListener("scroll", handleScroll);
-    };
-    scroll();
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
   });
+
   return (
     <div
       className={scroll > 1100 ? styles["skills"] : styles["skills_invisible"]}
@@ -28,8 +25,8 @@ const Skills = (props) => {
               className={styles.circle_chart}
               viewBox="0 0 33 33"
               xmlns="http://www.w3.org/2000/svg"
-              width="150"
-              height="150"
+              width="21vw"
+              height="21vw"
             >
               <circle
                 className={styles.chart_outer}
@@ -80,8 +77,8 @@ const Skills = (props) => {
               className={styles.circle_chart}
               viewBox="0 0 33 33"
               xmlns="http://www.w3.org/2000/svg"
-              width="150"
-              height="150"
+              width="21vw"
+              height="21vw"
             >
               <circle
                 className={styles.chart_outer}
@@ -135,8 +132,8 @@ const Skills = (props) => {
               className={styles.circle_chart}
               viewBox="0 0 33 33"
               xmlns="http://www.w3.org/2000/svg"
-              width="150"
-              height="150"
+              width="21vw"
+              height="21vw"
             >
               <circle
                 className={styles.chart_outer}
@@ -190,8 +187,8 @@ const Skills = (props) => {
               className={styles.circle_chart}
               viewBox="0 0 33 33"
               xmlns="http://www.w3.org/2000/svg"
-              width="150"
-              height="150"
+              width="21vw"
+              height="21vw"
             >
               <circle
                 className={styles.chart_outer}
@@ -245,8 +242,8 @@ const Skills = (props) => {
               className={styles.circle_chart}
               viewBox="0 0 33 33"
               xmlns="http://www.w3.org/2000/svg"
-              width="150"
-              height="150"
+              width="21vw"
+              height="21vw"
             >
               <circle
                 className={styles.chart_outer}
@@ -299,8 +296,8 @@ const Skills = (props) => {
               className={styles.circle_chart}
               viewBox="0 0 33 33"
               xmlns="http://www.w3.org/2000/svg"
-              width="150"
-              height="150"
+              width="21vw"
+              height="21vw"
             >
               <circle
                 className={styles.chart_outer}

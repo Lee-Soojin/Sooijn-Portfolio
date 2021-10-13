@@ -175,9 +175,14 @@
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 540px) {
   .site_banner {
     top: 10px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .site_banner {
     padding-top: 100px;
   }
 

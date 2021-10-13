@@ -291,11 +291,70 @@
 }
 
 @media screen and (max-width: 780px) {
+  .projects_title {
+    margin-top: 4.5rem;
+  }
+
+  .project_link {
+    margin-top: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 670px) {
   .project_img > img {
     width: 100%;
     height: auto;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .project {
+    margin: 0 auto;
+  }
+
+  .project_name {
+    font-size: 1.5rem;
+  }
+
+  .project_description_text {
+    width: 70%;
+  }
+
+  .project_description_text > p {
+    font-size: 0.9rem;
+  }
+
+  .project_description_text > ul {
+    font-size: 0.9rem;
+  }
+
+  .project_skill_stack > div {
+    width: 5rem;
+    height: 1.5rem;
+    font-size: 0.7rem;
+  }
+
+  .project_skills_title {
+    margin-left: 0;
+  }
+
+  .project_skill_stack > div:nth-child(6),
+  .project_skill_stack > div:nth-child(8) {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .project {
+    padding: 0;
+  }
+
+  .project_img {
+    height: 25rem;
+  }
+
+  .project_skill_stack {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
 }

@@ -25,8 +25,8 @@ const Skills = (props) => {
               className={styles.circle_chart}
               viewBox="0 0 33 33"
               xmlns="http://www.w3.org/2000/svg"
-              width="21vw"
-              height="21vw"
+              width="10vw"
+              height="10vw"
             >
               <circle
                 className={styles.chart_outer}
@@ -77,8 +77,8 @@ const Skills = (props) => {
               className={styles.circle_chart}
               viewBox="0 0 33 33"
               xmlns="http://www.w3.org/2000/svg"
-              width="21vw"
-              height="21vw"
+              width="10vw"
+              height="10vw"
             >
               <circle
                 className={styles.chart_outer}
@@ -132,8 +132,8 @@ const Skills = (props) => {
               className={styles.circle_chart}
               viewBox="0 0 33 33"
               xmlns="http://www.w3.org/2000/svg"
-              width="21vw"
-              height="21vw"
+              width="10vw"
+              height="10vw"
             >
               <circle
                 className={styles.chart_outer}
@@ -187,8 +187,8 @@ const Skills = (props) => {
               className={styles.circle_chart}
               viewBox="0 0 33 33"
               xmlns="http://www.w3.org/2000/svg"
-              width="21vw"
-              height="21vw"
+              width="10vw"
+              height="10vw"
             >
               <circle
                 className={styles.chart_outer}
@@ -232,7 +232,7 @@ const Skills = (props) => {
               </g>
             </svg>
             <p className={styles.chart_react_text}>
-              React Hooks, useEffect, 컴포넌트 구현, state 등 사용
+              React Hooks, useEffect, 컴포넌트, state 등 사용
             </p>
           </div>
 
@@ -242,8 +242,8 @@ const Skills = (props) => {
               className={styles.circle_chart}
               viewBox="0 0 33 33"
               xmlns="http://www.w3.org/2000/svg"
-              width="21vw"
-              height="21vw"
+              width="10vw"
+              height="10vw"
             >
               <circle
                 className={styles.chart_outer}
@@ -296,8 +296,8 @@ const Skills = (props) => {
               className={styles.circle_chart}
               viewBox="0 0 33 33"
               xmlns="http://www.w3.org/2000/svg"
-              width="21vw"
-              height="21vw"
+              width="10vw"
+              height="10vw"
             >
               <circle
                 className={styles.chart_outer}

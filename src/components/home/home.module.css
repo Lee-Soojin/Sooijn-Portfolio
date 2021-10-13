@@ -206,5 +206,6 @@
 
   .site_banner__img_container > img {
     width: 12rem;
+    padding: 1rem;
   }
 }

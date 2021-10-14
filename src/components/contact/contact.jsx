@@ -18,7 +18,7 @@ const Contact = (props) => {
   return (
     <div
       className={
-        scroll > 3200 ? styles["contact"] : styles["contact_invisible"]
+        scroll > 2200 ? styles["contact"] : styles["contact_invisible"]
       }
       ref={skillsRef}
     >

@@ -250,7 +250,11 @@
 
 @media screen and (max-width: 420px) {
   .header {
-    height: 80px;
+    height: 75px;
+  }
+
+  .header_white {
+    height: 75px;
   }
 
   .header_toggle_button {

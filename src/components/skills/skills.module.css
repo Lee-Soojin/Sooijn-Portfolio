@@ -264,7 +264,7 @@
 @media screen and (max-width: 670px) {
   .circle_chart_container {
     grid-template-columns: repeat(2, 12rem);
-    grid-template-rows: repeat(3, 10rem);
+    grid-template-rows: repeat(3, 13rem);
   }
 }
 @media screen and (max-width: 540px) and (max-height: 720px) {

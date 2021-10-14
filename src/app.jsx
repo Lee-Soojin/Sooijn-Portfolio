@@ -47,7 +47,7 @@ function App() {
       >
         <RiArrowUpCircleFill />
       </button>
-      <footer className={scroll > 3800 ? "footer" : "footer_invisible"}>
+      <footer className={scroll > 2600 ? "footer" : "footer_invisible"}>
         <div className="footer__link">
           <a href="https://github.com/Lee-Soojin" target="_blank">
             <DiGithubFull />

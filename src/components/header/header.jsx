@@ -6,6 +6,7 @@ const Header = (props) => {
   const [isClicked, setIsClicked] = useState(false);
   const [scroll, setScroll] = useState(0);
   const [height, setHeight] = useState(0);
+  const [width, setWidth] = useState(0);
   const headerRef = useRef(null);
 
   const handleScroll = () => {
@@ -15,6 +16,8 @@ const Header = (props) => {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     setHeight(headerRef.current.clientHeight);
+    setWidth(headerRef.current.clientWidth);
+    console.log("width:", width);
   });
 
   const handleClick = (event) => {
@@ -37,18 +40,31 @@ const Header = (props) => {
   const handleScrollToSkills = (event) => {
     event.preventDefault();
     window.scrollTo(0, 1850);
+    if (width <= 540) {
+      window.scrollTo(0, 2230);
+    }
     setIsClicked(false);
   };
 
   const handleScrollToProjects = (event) => {
     event.preventDefault();
     window.scrollTo(0, 2600);
+    if (width <= 780) {
+      window.scrollTo(0, 2900);
+    } else if (width <= 540) {
+      window.scrollTo(0, 3900);
+    }
     setIsClicked(false);
   };
 
   const handleScrollToContact = (event) => {
     event.preventDefault();
     window.scrollTo(0, 3500);
+    if (width <= 780) {
+      window.scrollTo(0, 4800);
+    } else if (width <= 540) {
+      window.scrollTo(0, 5200);
+    }
     setIsClicked(false);
   };
 

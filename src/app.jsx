@@ -1,15 +1,13 @@
 import "./app.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import About from "./components/about/about";
 import Header from "./components/header/header";
 import Home from "./components/home/home";
-// import "aos/dist/aos.css";
 import Skills from "./components/skills/skills";
 import Projects from "./components/projects/projects";
 import Contact from "./components/contact/contact";
 import { RiArrowUpCircleFill } from "@react-icons/all-files/ri/RiArrowUpCircleFill";
 import { DiGithubFull } from "@react-icons/all-files/di/DiGithubFull";
-import { useEffect } from "react/cjs/react.development";
 
 function App() {
   const [visible, setVisible] = useState(false);

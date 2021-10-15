@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./home.module.css";
-import profileImg from "../../imgs/profile_example.jpg";
+import profileImg from "../../imgs/profile_img.jpg";
 
 const Home = (props) => {
   return (

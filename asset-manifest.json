@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Sooijn-Portfolio/static/css/main.b83c61d1.chunk.css",
-    "main.js": "/Sooijn-Portfolio/static/js/main.310a2471.chunk.js",
-    "main.js.map": "/Sooijn-Portfolio/static/js/main.310a2471.chunk.js.map",
+    "main.js": "/Sooijn-Portfolio/static/js/main.ce1f4ae3.chunk.js",
+    "main.js.map": "/Sooijn-Portfolio/static/js/main.ce1f4ae3.chunk.js.map",
     "runtime-main.js": "/Sooijn-Portfolio/static/js/runtime-main.f1e7ee07.js",
     "runtime-main.js.map": "/Sooijn-Portfolio/static/js/runtime-main.f1e7ee07.js.map",
     "static/js/2.462e2f81.chunk.js": "/Sooijn-Portfolio/static/js/2.462e2f81.chunk.js",
@@ -15,6 +15,7 @@
     "static/media/about_certification.76e379c9.svg": "/Sooijn-Portfolio/static/media/about_certification.76e379c9.svg",
     "static/media/about_school.2c2f3d70.svg": "/Sooijn-Portfolio/static/media/about_school.2c2f3d70.svg",
     "static/media/home.module.css": "/Sooijn-Portfolio/static/media/home_bg.e9f4fc1f.jpg",
+    "static/media/profile_img.fc395f10.jpg": "/Sooijn-Portfolio/static/media/profile_img.fc395f10.jpg",
     "static/media/projects_food_diary_img.f58b379b.png": "/Sooijn-Portfolio/static/media/projects_food_diary_img.f58b379b.png",
     "static/media/projects_tft_img.40308307.png": "/Sooijn-Portfolio/static/media/projects_tft_img.40308307.png"
   },
@@ -22,6 +23,6 @@
     "static/js/runtime-main.f1e7ee07.js",
     "static/js/2.462e2f81.chunk.js",
     "static/css/main.b83c61d1.chunk.css",
-    "static/js/main.310a2471.chunk.js"
+    "static/js/main.ce1f4ae3.chunk.js"
   ]
 }

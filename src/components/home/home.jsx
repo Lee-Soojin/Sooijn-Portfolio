@@ -24,7 +24,7 @@ const Home = (props) => {
           </p>
         </div>
         <figure className={styles.site_banner__img_container}>
-          <img src={profileImg} alt="profile_img" />
+          <img src={profileImg} alt="profile_img" width="320" height="453" />
         </figure>
       </div>
     </section>

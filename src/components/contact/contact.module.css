@@ -108,6 +108,63 @@
   font-size: 1.1rem;
 }
 
+.contact_button__resume {
+  display: flex;
+  position: relative;
+  width: 15rem;
+  height: 3rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  margin: 2rem auto;
+}
+
+.contact_button__resume > a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.resume__link {
+  margin-top: 1rem;
+  display: flex;
+  border-radius: 4px;
+  background-color: blue;
+  color: white;
+  width: 12rem;
+  height: 3rem;
+  line-height: 3rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  transition: all 2s ease;
+}
+
+.resume__link > p {
+  position: absolute;
+  left: 2.2rem;
+  text-decoration: none;
+}
+
+.resume__link_icon {
+  font-size: 2rem;
+  position: absolute;
+  top: 0.5rem;
+}
+
+.resume__link:hover {
+  transform: scale(1.1);
+  background: -webkit-linear-gradient(
+    -62deg,
+    rgb(0, 38, 253),
+    rgb(30, 142, 255)
+  );
+  box-shadow: 4px 4px 8px gray;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

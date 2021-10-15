@@ -123,7 +123,7 @@
 
 @media screen and (max-width: 900px) {
   .site_banner {
-    top: 110px;
+    top: 10px;
   }
   .site_banner_container {
     flex-direction: column;

@@ -105,6 +105,7 @@
 
 .footer__copyright {
   font-size: 1rem;
+  cursor: default;
 }
 
 .footer__email {

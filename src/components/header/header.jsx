@@ -39,7 +39,7 @@ const Header = (props) => {
 
   const handleScrollToSkills = (event) => {
     event.preventDefault();
-    window.scrollTo(0, 1850);
+    window.scrollTo(0, 1600);
     if (width <= 540) {
       window.scrollTo(0, 2230);
     }
@@ -48,7 +48,7 @@ const Header = (props) => {
 
   const handleScrollToProjects = (event) => {
     event.preventDefault();
-    window.scrollTo(0, 2600);
+    window.scrollTo(0, 2350);
     if (width <= 780) {
       window.scrollTo(0, 2900);
     } else if (width <= 540) {
@@ -59,7 +59,7 @@ const Header = (props) => {
 
   const handleScrollToContact = (event) => {
     event.preventDefault();
-    window.scrollTo(0, 3500);
+    window.scrollTo(0, 4500);
     if (width <= 780) {
       window.scrollTo(0, 4800);
     } else if (width <= 540) {

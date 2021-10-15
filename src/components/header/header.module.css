@@ -207,6 +207,7 @@
     flex-direction: column;
     padding: 5rem 0;
     width: 100%;
+    justify-content: space-between;
   }
 
   .header_navbar_menu > li {
@@ -265,5 +266,12 @@
 
   .header_navbar__active {
     height: 92vh;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .header {
+    width: 100vw;
+    left: auto;
   }
 }

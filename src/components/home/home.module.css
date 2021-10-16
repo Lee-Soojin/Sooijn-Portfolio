@@ -118,9 +118,6 @@
   }
 }
 
-@media screen and (max-width: 1024px) and (max-height: 1366px) {
-}
-
 @media screen and (max-width: 900px) {
   .site_banner {
     top: 10px;
@@ -146,10 +143,6 @@
   .site_banner__title,
   .site_banner__description {
     align-items: center;
-  }
-
-  .site_banner__img_container > img {
-    width: 17rem;
   }
 }
 

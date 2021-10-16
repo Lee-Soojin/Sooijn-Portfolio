@@ -50,9 +50,9 @@ const Header = (props) => {
     event.preventDefault();
     window.scrollTo(0, 2350);
     if (width <= 780) {
-      window.scrollTo(0, 2900);
+      window.scrollTo(0, 2700);
     } else if (width <= 540) {
-      window.scrollTo(0, 3900);
+      window.scrollTo(0, 3400);
     }
     setIsClicked(false);
   };
@@ -61,9 +61,9 @@ const Header = (props) => {
     event.preventDefault();
     window.scrollTo(0, 4500);
     if (width <= 780) {
-      window.scrollTo(0, 4800);
+      window.scrollTo(0, 5500);
     } else if (width <= 540) {
-      window.scrollTo(0, 5200);
+      window.scrollTo(0, 6000);
     }
     setIsClicked(false);
   };

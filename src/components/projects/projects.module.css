@@ -101,7 +101,7 @@
   display: block;
   width: 7rem;
   height: 2rem;
-  margin: 0.5rem auto;
+  margin: 0 auto;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -133,7 +133,7 @@
   font-size: 1.1rem;
   border-radius: 1rem;
   line-height: 2rem;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   box-shadow: -5px -5px 20px #fff, 5px 5px 20px var(--shadow-color);
   transition: all 0.1s ease;
 }
@@ -191,14 +191,16 @@
   margin-left: 1.5rem;
 }
 
-.project_skill_stack {
+.project_skill_stack,
+.project_portfolio_skill_stack {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 0.5rem;
 }
 
-.project_skill_stack > div {
+.project_skill_stack > div,
+.project_portfolio_skill_stack > div {
   display: flex;
   flex-direction: row;
   width: 6rem;
@@ -214,11 +216,13 @@
   transition: all 0.05s ease;
 }
 
-.project_skill_stack > div:hover {
+.project_skill_stack > div:hover,
+.project_portfolio_skill_stack > div:hover {
   transform: scale(1.07);
 }
 
-.project_skill_stack > div > p {
+.project_skill_stack > div > p,
+.project_portfolio_skill_stack > div > p {
   margin-left: 0.5rem;
   color: white;
 }
@@ -255,6 +259,26 @@
 .project_skill_stack > div:nth-child(8) {
   background-color: var(--skill-ckeditor-color);
   font-size: 0.8rem;
+}
+
+.project_portfolio_skill_stack > div:nth-child(1) {
+  background-color: var(--skill-react-color);
+}
+
+.project_portfolio_skill_stack > div:nth-child(2) {
+  background-color: var(--skill-postcss-color);
+}
+
+.project_portfolio_skill_stack > div:nth-child(3) {
+  background-color: var(--skill-html-color);
+}
+
+.project_portfolio_skill_stack > div:nth-child(4) {
+  background-color: var(--skill-css-color);
+}
+
+.project_portfolio_skill_stack > div:nth-child(5) {
+  background-color: var(--skill-javascript-color);
 }
 
 .skill_naver_icon,

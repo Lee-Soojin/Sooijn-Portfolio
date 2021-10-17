@@ -17,7 +17,6 @@ const Header = (props) => {
     window.addEventListener("scroll", handleScroll);
     setHeight(headerRef.current.clientHeight);
     setWidth(headerRef.current.clientWidth);
-    console.log("width:", width);
   });
 
   const handleClick = (event) => {

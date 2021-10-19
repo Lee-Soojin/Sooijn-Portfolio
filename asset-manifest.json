@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.0b133f37.chunk.css",
-    "main.js": "/static/js/main.9e2ee5cc.chunk.js",
-    "main.js.map": "/static/js/main.9e2ee5cc.chunk.js.map",
+    "main.css": "/static/css/main.86a43305.chunk.css",
+    "main.js": "/static/js/main.f4e5723f.chunk.js",
+    "main.js.map": "/static/js/main.f4e5723f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8f8ca936.js",
     "runtime-main.js.map": "/static/js/runtime-main.8f8ca936.js.map",
     "static/js/2.a6d601ed.chunk.js": "/static/js/2.a6d601ed.chunk.js",
     "static/js/2.a6d601ed.chunk.js.map": "/static/js/2.a6d601ed.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.0b133f37.chunk.css.map": "/static/css/main.0b133f37.chunk.css.map",
+    "static/css/main.86a43305.chunk.css.map": "/static/css/main.86a43305.chunk.css.map",
     "static/js/2.a6d601ed.chunk.js.LICENSE.txt": "/static/js/2.a6d601ed.chunk.js.LICENSE.txt",
     "static/media/about_awards_icon.4c50dab7.svg": "/static/media/about_awards_icon.4c50dab7.svg",
     "static/media/about_birth.c7d46caa.svg": "/static/media/about_birth.c7d46caa.svg",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.8f8ca936.js",
     "static/js/2.a6d601ed.chunk.js",
-    "static/css/main.0b133f37.chunk.css",
-    "static/js/main.9e2ee5cc.chunk.js"
+    "static/css/main.86a43305.chunk.css",
+    "static/js/main.f4e5723f.chunk.js"
   ]
 }

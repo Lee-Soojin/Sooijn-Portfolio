@@ -33,6 +33,9 @@ const Header = (props) => {
   const handleScrollToAbout = (event) => {
     event.preventDefault();
     window.scrollTo(0, 900);
+    if (width <= 400) {
+      window.scrollTo(0, 700);
+    }
     setIsClicked(false);
   };
 

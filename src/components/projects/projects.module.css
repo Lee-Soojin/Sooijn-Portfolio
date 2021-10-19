@@ -352,7 +352,8 @@
     font-size: 0.9rem;
   }
 
-  .project_skill_stack > div {
+  .project_skill_stack > div,
+  .project_portfolio_skill_stack > div {
     width: 5rem;
     height: 1.5rem;
     font-size: 0.7rem;
@@ -377,7 +378,8 @@
     height: 25rem;
   }
 
-  .project_skill_stack {
+  .project_skill_stack,
+  .project_portfolio_skill_stack {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }

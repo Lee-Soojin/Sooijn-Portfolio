@@ -199,6 +199,7 @@
 
   .site_banner__img_container > img {
     width: 12rem;
+    height: auto;
     padding: 1rem;
   }
 }

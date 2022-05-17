@@ -27,6 +27,28 @@
   align-items: center;
 }
 
+.blank {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 170px;
+}
+
+.blank > p:nth-child(1) {
+  font-family: var(--footer-font-family);
+  color: #555555;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.blank > p:nth-child(2) {
+  font-family: var(--footer-font-family);
+  color: #555555;
+  font-weight: 400;
+  margin: 0;
+  font-size: 16px;
+}
+
 .button_scrollUp {
   position: fixed;
   bottom: 2rem;

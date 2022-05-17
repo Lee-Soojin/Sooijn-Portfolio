@@ -34,7 +34,11 @@ function App() {
   return (
     <div className="portfolio">
       <Header />
-      <Home />
+      <div className="blank">
+        <p>포트폴리오 준비 중입니다...</p>
+        <p>더 업그레이드된 포트폴리오로 돌아오겠습니다:)</p>
+      </div>
+      {/* <Home />
       <About />
       <Skills />
       <Projects />
@@ -55,7 +59,7 @@ function App() {
           Copyright 2021. Lee Soojin All Rights Reserved
         </div>
         <div className="footer__email">soojl1005@naver.com</div>
-      </footer>
+      </footer> */}
     </div>
   );
 }

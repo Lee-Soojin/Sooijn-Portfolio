@@ -28,11 +28,11 @@ const Contact = (props) => {
         <ul>
           <li className={styles.contact_phone}>
             <IoPhonePortraitOutline className={styles.contact_icon} />
-            <p>010-8601-8226</p>
+            <p>010-0000-0000</p>
           </li>
           <li className={styles.contact_email}>
             <HiOutlineMail className={styles.contact_icon} />
-            <p>soojl1005@naver.com</p>
+            <p>soo1234@naver.com</p>
           </li>
         </ul>
         <p className={styles.contact_paragraph}>
